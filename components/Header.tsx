@@ -2,8 +2,13 @@ import React from 'react'
 
 const Header: React.FC = () => {
 	return (
-		<header className="flex bg-primary justify-center align-center h-screen">
-			<h1 className="text-2x1">Hello! I&apos;m Ibrahima</h1>
+		<header className="flex flex-col justify-center items-center h-screen">
+			<h1 className="text-5xl text-center font-bold">Hello! I&apos;m Ibrahima</h1>
+			<p className="text-center text-gray-dark">
+				JavaScript enthusiast, Full-stack developer, Blogger who also dabbles on UX/UI. <br /> I
+				build beautiful, user-friendly, and intuitive websites that fit your needs.
+			</p>
+			<button className="bg-primary text-white">Contact Me</button>
 		</header>
 	)
 }

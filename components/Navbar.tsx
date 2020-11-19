@@ -2,8 +2,8 @@ import React from 'react'
 import NavLink from './NavLink'
 
 const Navbar: React.FC = () => (
-	<nav className="flex justify-between bg-white align-center px-5 py-4">
-		<h1 className="font-bold">Ibrahima Ndaw</h1>
+	<nav className="flex justify-between bg-white items-center px-5 py-3">
+		<h1 className="font-bold text-2xl">IN</h1>
 		<ul className="flex justify-center align-center">
 			<NavLink linkName="Home" linkPage="/" />
 			<NavLink linkName="About" linkPage="#about" />

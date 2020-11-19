@@ -1,5 +1,3 @@
-const colors = require('tailwindcss/colors')
-
 module.exports = {
 	future: {
 		// removeDeprecatedGapUtilities: true,
@@ -8,7 +6,11 @@ module.exports = {
 	purge: [],
 	theme: {
 		colors: {
-			gray: colors.coolGray,
+			gray: {
+				light: '#f9fafb',
+				dark: '#757575',
+			},
+			white: '#fff',
 			primary: '#cf6241',
 			secondary: '#f0eeee',
 		},
