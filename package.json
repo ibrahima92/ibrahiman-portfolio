@@ -6,7 +6,7 @@
 		"dev": "next dev",
 		"build": "next build",
 		"start": "next start",
-		// "postinstall": "husky install"
+		"postinstall": "husky install"
 	},
 	"dependencies": {
 		"next": "9.5.3",
@@ -38,10 +38,10 @@
 		}
 	},
 	"lint-staged": {
-		"*.(js|html|css|ts|tsx|jsx)": [
+		"*.(js|html|css|ts)": [
 			"prettier --write",
 			"git add"
 		],
-		"*.(js|jsx|tsx|ts)": "eslint --cache --fix"
+		"*.(js|ts)": "eslint --cache --fix"
 	}
 }
