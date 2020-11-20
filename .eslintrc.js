@@ -24,7 +24,6 @@ module.exports = {
 				'plugin:react/recommended', // React rules
 				'plugin:react-hooks/recommended', // React hooks rules
 				'plugin:jsx-a11y/recommended', // Accessibility rules
-				'plugin:tailwind/recommended', // Tailwind rules
 			],
 			rules: {
 				'react/prop-types': 'off', // We will use TypeScript's types for component props instead
