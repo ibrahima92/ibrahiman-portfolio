@@ -8,7 +8,9 @@ const Header: React.FC = () => {
 				JavaScript enthusiast, Full-stack developer, Blogger who also dabbles on UX/UI. <br /> I
 				build beautiful, user-friendly, and intuitive websites that fit your needs.
 			</p>
-			<button className="bg-primary text-white">Contact Me</button>
+			<button className="bg-gradient-to-r from-primary via-red-500 to-pink-500 text-white">
+				Contact Me
+			</button>
 		</header>
 	)
 }
