@@ -1,4 +1,4 @@
-// const colors = require('tailwindcss/colors')
+const colors = require('tailwindcss/colors')
 
 module.exports = {
 	future: {
@@ -9,10 +9,11 @@ module.exports = {
 	theme: {
 		colors: {
 			gray: {
-				light: '#f9fafb',
+				light: '#F8F0ED',
 				dark: '#757575',
 			},
-			// red: colors.rose,
+			red: colors.red,
+			orange: colors.orange,
 			white: '#fff',
 			primary: '#cf6241',
 			secondary: '#f0eeee',

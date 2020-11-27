@@ -1,11 +1,10 @@
-import NavBar from '../components/Navbar'
-import Header from '../components/Header'
+import Header from '../components/Layout/Header'
+import Layout from '../components/Layout/Layout'
 
 export default function Home(): React.ReactNode {
 	return (
-		<main>
-			<NavBar />
+		<Layout>
 			<Header />
-		</main>
+		</Layout>
 	)
 }
