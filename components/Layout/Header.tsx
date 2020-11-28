@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const Header: React.FC = () => {
@@ -9,9 +10,9 @@ const Header: React.FC = () => {
 					JavaScript enthusiast, Full-stack developer, Blogger who also dabbles on UX/UI. <br /> I
 					build beautiful, user-friendly, and intuitive websites that fit your needs.
 				</p>
-				<button className="bg-gradient-to-r from-primary via-orange-400 to-primary text-white">
-					Contact Me
-				</button>
+				<Link href="#contact">
+					<a className="button-primary">Contact Me</a>
+				</Link>
 			</div>
 		</header>
 	)

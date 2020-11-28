@@ -1,5 +1,5 @@
 import React from 'react'
-import { Skill } from '../../types/Skill'
+import { Skill } from '../../types/Type'
 import SkillCard from './SkillCard'
 
 const Skills: React.FC = () => {
