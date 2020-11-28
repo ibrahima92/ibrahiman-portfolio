@@ -10,6 +10,10 @@ h1 {
 	@apply font-nunito;
 }
 
+nav {
+	@apply flex justify-between items-center px-5 py-3 w-full z-50;
+}
+
 button {
 	@apply my-2 rounded-3xl px-5 py-2;
 }

@@ -7,7 +7,7 @@ type Props = {
 }
 
 const NavLink: React.FC<Props> = ({ linkPage, linkName }) => (
-	<li className="mr-4 hover:text-primary active:text-primary">
+	<li className="mr-4 hover:text-primary active:bg-primary">
 		<Link href={linkPage}>
 			<a>{linkName}</a>
 		</Link>

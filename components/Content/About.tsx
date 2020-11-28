@@ -4,7 +4,7 @@ import Image from 'next/image'
 const About: React.FC = () => (
 	<div
 		id="about"
-		className="max-w-4xl m-auto shadow-lg transform -translate-y-12 bg-white p-10 flex flex-col justify-center items-center rounded-lg"
+		className="max-w-4xl m-auto shadow-md transform -translate-y-12 bg-white p-10 flex flex-col justify-center items-center rounded-lg"
 	>
 		<Image src="/logo.png" width="150" height="150" alt="logo-avatar" />
 		<p>

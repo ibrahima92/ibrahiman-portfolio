@@ -15,6 +15,7 @@
 		"postcss-preset-env": "^6.7.0",
 		"react": "17.0.1",
 		"react-dom": "17.0.1",
+		"react-waypoint": "^9.0.3",
 		"tailwindcss": "yarn:@tailwindcss/postcss7-compat"
 	},
 	"devDependencies": {
