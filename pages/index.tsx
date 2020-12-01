@@ -1,18 +1,22 @@
+import Layout from '../components/Layout/Layout'
 import About from '../components/Content/About'
+import CTA from '../components/Content/CTA'
 import Projects from '../components/Content/Projects'
 import Skills from '../components/Content/Skills'
 import Header from '../components/Layout/Header'
-import Layout from '../components/Layout/Layout'
 
 export default function Home(): React.ReactNode {
 	return (
 		<Layout>
 			<Header />
-			<section className="bg-white pb-20">
+			<section className="bg-white">
 				<About />
 				<Skills />
 			</section>
-			<section className="py-20">
+			<section className="bg-gradient-to-r from-secondary to-black">
+				<CTA />
+			</section>
+			<section className="to-primary">
 				<Projects />
 			</section>
 		</Layout>

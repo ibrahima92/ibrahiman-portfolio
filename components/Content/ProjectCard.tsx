@@ -10,7 +10,7 @@ type Props = {
 const ProjectCard: React.FC<Props> = ({ project }) => {
 	return (
 		<Link href={project.link}>
-			<div className="w-1/3 flex-1 overflow-hidden">
+			<div className="w-1/3 flex-1 rounded-lg shadow-xl overflow-hidden">
 				<div className="p-2 bg-white border-b-2 border-primary">
 					<h1 className="font-bold text-primary mb-1">{project.title}</h1>
 					<ul className="flex items-center">

@@ -6,9 +6,9 @@ type Props = {
 }
 
 const SkillCard: React.FC<Props> = ({ skill: { title, skills } }) => (
-	<div className="w-1/4 flex-1 bg-gray-light rounded-lg shadow-lg overflow-hidden">
-		<div className="bg-primary p-2">
-			<h1 className="font-bold text-2xl text-white text-center">{title}</h1>
+	<div className="w-1/4 flex-1 rounded-lg shadow-lg overflow-hidden">
+		<div className="bg-tertiary p-2">
+			<h1 className="text-2xl text-center">{title}</h1>
 		</div>
 		<ul className="p-4">
 			{skills.map((skill) => (
