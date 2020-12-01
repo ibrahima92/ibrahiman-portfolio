@@ -41,10 +41,10 @@
 	},
 	"lint-staged": {
 		"*.(js|html|css|ts|tsx|jsx)": [
+			"eslint --cache --fix",
+			"eslint --cache --fix",
 			"prettier --write",
 			"git add"
-		],
-		"*.(js|ts)": "eslint --cache --fix",
-		"*.js": "eslint --cache --fix"
+		]
 	}
 }
