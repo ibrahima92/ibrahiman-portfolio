@@ -11,7 +11,7 @@ export const ProjectsList: Project[] = [
 	{
 		id: 1,
 		title: 'Portfolio',
-		imagePreview: '/static/in-dark-theme.PNG',
+		imagePreview: '/static/portfolio.PNG',
 		stack: ['Gatsby', 'GraphQL', 'Markdown'],
 		link: 'https://www.ibrahima-ndaw.com/',
 	},

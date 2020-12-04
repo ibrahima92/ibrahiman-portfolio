@@ -10,9 +10,9 @@ type Props = {
 const ProjectCard: React.FC<Props> = ({ project }) => {
 	return (
 		<Link href={project.link}>
-			<div className="w-1/3 flex-1 rounded-lg shadow-xl overflow-hidden">
-				<div className="p-2 bg-white border-b-2 border-primary">
-					<h1 className="font-bold text-primary mb-1">{project.title}</h1>
+			<div className="w-1/3 bg-tertiary flex-1 rounded-lg ring-2 ring-tertiary overflow-hidden">
+				<div className="p-2">
+					<h1 className="font-bold mb-1">{project.title}</h1>
 					<ul className="flex items-center">
 						{project.stack.map((stack) => (
 							<li className="text-gray-dark mr-2" key={stack}>
@@ -21,8 +21,9 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
 						))}
 					</ul>
 				</div>
-				<div>
+				<div className="p-2">
 					<Image
+						className="shadow-2xl rounded-lg"
 						src={project.imagePreview}
 						width="300"
 						height="300"

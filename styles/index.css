@@ -15,7 +15,7 @@ nav {
 }
 
 .button-primary {
-	@apply my-5 rounded-3xl px-10 py-2 bg-gradient-to-r from-primary to-secondary text-white shadow-lg text-xl;
+	@apply my-5 rounded-3xl px-10 py-2 bg-gradient-to-r from-primary to-secondary text-white shadow-lg text-xl ring-2 ring-tertiary;
 }
 
 p {

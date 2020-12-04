@@ -5,8 +5,7 @@
 	"scripts": {
 		"dev": "next dev",
 		"build": "next build",
-		"start": "next start",
-		"postinstall": "husky install"
+		"start": "next start"
 	},
 	"dependencies": {
 		"autoprefixer": "^9",
@@ -40,7 +39,7 @@
 		}
 	},
 	"lint-staged": {
-		"*.(js|html|css|ts|tsx|jsx)": [
+		"*.{js,html,css,ts,tsx,jsx}": [
 			"eslint --cache --fix",
 			"eslint --cache --fix",
 			"prettier --write",
