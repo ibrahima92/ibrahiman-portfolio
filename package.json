@@ -43,7 +43,7 @@
 			"eslint --cache --fix",
 			"eslint --cache --fix",
 			"prettier --write",
-			"git add"
+			"git add ."
 		]
 	}
 }
