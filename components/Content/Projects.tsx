@@ -12,7 +12,7 @@ const Projects: React.FC = () => (
 		</p>
 		<div className="flex justify-center items-center flex-wrap space-x-4">
 			{ProjectsList.map((project) => (
-				<ProjectCard key={project.id} project={project} />
+				<ProjectCard key={project.id} />
 			))}
 		</div>
 	</div>
