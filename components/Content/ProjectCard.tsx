@@ -15,8 +15,8 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
 					<h1 className="font-bold mb-1">{project.title}</h1>
 					<ul className="flex items-center">
 						{project.stack.map((stack) => (
-							<li className="text-gray-dark mr-2" key={stack}>
-								{stack}
+							<li className="text-gray-dark mr-3" key={stack}>
+								&#9671; {stack}
 							</li>
 						))}
 					</ul>

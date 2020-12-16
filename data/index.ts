@@ -12,7 +12,7 @@ export const ProjectsList: Project[] = [
 		id: 1,
 		title: 'Portfolio',
 		imagePreview: '/static/portfolio.PNG',
-		stack: ['Gatsby', 'GraphQL', 'Markdown'],
+		stack: ['Next.js', 'TypeScript', 'Tailwind CSS'],
 		link: 'https://www.ibrahima-ndaw.com/',
 	},
 	{

@@ -4,20 +4,24 @@ import CTA from '../components/Content/CTA'
 import Projects from '../components/Content/Projects'
 import Skills from '../components/Content/Skills'
 import Header from '../components/Layout/Header'
+import Contact from '../components/Content/Contact'
 
 export default function Home(): React.ReactNode {
 	return (
 		<Layout>
 			<Header />
-			<section className="bg-white">
+			<section id="about" className="bg-white">
 				<About />
 				<Skills />
 			</section>
-			<section className="bg-gradient-to-r from-secondary to-black">
+			<section className="bg-gradient-to-r from-primary via-tertiary to-primary">
 				<CTA />
 			</section>
-			<section className="to-primary">
+			<section id="projects">
 				<Projects />
+			</section>
+			<section id="contact" className="bg-white">
+				<Contact />
 			</section>
 		</Layout>
 	)

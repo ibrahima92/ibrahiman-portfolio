@@ -3,6 +3,12 @@ export type Skill = {
 	skills: string[]
 }
 
+export type Contact = {
+	firstName: string
+	lastName: string
+	description: string
+}
+
 export type Project = {
 	id: number
 	title: string

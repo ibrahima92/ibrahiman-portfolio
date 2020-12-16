@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	@apply bg-gray-light font-roboto text-base;
 }
@@ -11,11 +15,11 @@ h1 {
 }
 
 nav {
-	@apply flex justify-between items-center px-5 py-3 w-full z-50;
+	@apply px-5 py-3 w-full z-50;
 }
 
-.button-primary {
-	@apply my-5 rounded-3xl px-10 py-2 bg-gradient-to-r from-primary to-secondary text-white shadow-lg text-xl ring-2 ring-tertiary;
+.navbar {
+	@apply flex justify-between items-center;
 }
 
 p {
@@ -24,4 +28,23 @@ p {
 
 section {
 	@apply px-16 py-32;
+}
+
+.button-primary {
+	@apply w-48 m-auto my-5 rounded-3xl px-10 py-2 bg-gradient-to-r from-primary to-secondary text-white shadow-lg text-xl ring-2 ring-tertiary focus:outline-none;
+}
+
+.headline {
+	@apply text-5xl my-2 text-center font-bold;
+}
+
+.description {
+	@apply mt-5 mb-16 max-w-4xl m-auto;
+}
+
+.small-width {
+	@apply max-w-4xl m-auto;
+}
+.large-width {
+	@apply max-w-6xl m-auto;
 }
