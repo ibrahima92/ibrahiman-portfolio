@@ -1,26 +1,22 @@
 import * as React from 'react'
-import { Contact as ContactType } from '../../types/Type'
+// import { Contact as ContactType } from '../../types/Type'
 
 const Contact: React.FC = () => {
-	const [formData, setformData] = React.useState<ContactType>()
+	// const [formData, setformData] = React.useState<ContactType>()
+	const [sendForm, setSendForm] = React.useState<boolean>(false)
 	const saveForm = (e) => {
 		e.preventDefault()
+		setSendForm(true)
 		setTimeout(() => {
-			setformData({
-				...formData,
-				[e.currentTarget.id]: 'first-name',
-			})
+			setSendForm(false)
+			e.target.reset()
 		}, 2000)
 	}
 
 	return (
 		<div>
 			<h1 className="headline">Let&apos;s work together!</h1>
-			<p className="description">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae vero culpa cum ipsa
-				necessitatibus nemo officia voluptatum magnam dignissimos? Quod nemo eveniet praesentium
-				dolorum obcaecati sapiente dolor vero sunt beatae!
-			</p>
+			<p className="description">Do you have an idea in mind? Let&apos; discuss!</p>
 			<form
 				onSubmit={saveForm}
 				className="rounded-lg shadow-xl ring-2 ring-tertiary overflow-hidden px-8 py-6 flex flex-col small-width"
@@ -34,7 +30,7 @@ const Contact: React.FC = () => {
 							First Name
 						</label>
 						<input
-							className="appearance-none block w-full bg-grey-lighter text-grey-darker border border-red rounded py-3 px-4 mb-3"
+							className="appearance-none block w-full bg-grey-lighter text-grey-darker border border-tertiary rounded py-3 px-4 mb-3"
 							id="first-name"
 							type="text"
 							placeholder="Jane"
@@ -48,7 +44,7 @@ const Contact: React.FC = () => {
 							Last Name
 						</label>
 						<input
-							className="appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-3 px-4"
+							className="appearance-none block w-full bg-grey-lighter text-grey-darker border border-tertiary rounded py-3 px-4"
 							id="grid-last-name"
 							type="text"
 							placeholder="Doe"
@@ -63,13 +59,13 @@ const Contact: React.FC = () => {
 						Description
 					</label>
 					<textarea
-						className="appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-3 px-4 mb-3"
+						className="appearance-none block w-full bg-grey-lighter text-grey-darker border border-tertiary rounded py-3 px-4 mb-3"
 						name="description"
 						cols={30}
 						rows={10}
 					/>
 				</div>
-				<button className="button-primary">{formData ? 'Sending...' : 'Send'}</button>
+				<button className="btn btn-primary">{sendForm ? 'Sending...' : 'Send'}</button>
 			</form>
 		</div>
 	)

@@ -3,7 +3,7 @@ import { SkillSet } from '../../data'
 import SkillCard from './SkillCard'
 
 const Skills: React.FC = () => (
-	<div className="flex flex-wrap space-x-4 max-w-5xl m-auto">
+	<div className="flex flex-wrap justify-center large-width">
 		{SkillSet.map((skill) => (
 			<SkillCard key={skill.title} skill={skill} />
 		))}

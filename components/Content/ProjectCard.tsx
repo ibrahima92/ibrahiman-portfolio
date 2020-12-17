@@ -9,30 +9,36 @@ type Props = {
 
 const ProjectCard: React.FC<Props> = ({ project }) => {
 	return (
-		<Link href={project.link}>
-			<div className="w-1/3 bg-tertiary flex-1 rounded-lg ring-2 ring-tertiary overflow-hidden">
-				<div className="p-2">
-					<h1 className="font-bold mb-1">{project.title}</h1>
-					<ul className="flex items-center">
-						{project.stack.map((stack) => (
-							<li className="text-gray-dark mr-3" key={stack}>
-								&#9671; {stack}
-							</li>
-						))}
-					</ul>
-				</div>
-				<div className="p-2">
-					<Image
-						className="shadow-2xl rounded-lg"
-						src={project.imagePreview}
-						width="300"
-						height="300"
-						alt="project-image"
-						layout="responsive"
-					/>
-				</div>
+		<div className="w-full m-3 rounded-lg shadow-xl bg-white ring-2 ring-tertiary overflow-hidden md:w-80">
+			<div className="p-2">
+				<h1 className="font-bold mb-1">{project.title}</h1>
+				<ul className="flex items-center">
+					{project.stack.map((stack) => (
+						<li className="text-xs text-grey-darker mr-3 sm:text-base" key={stack}>
+							{stack}
+						</li>
+					))}
+				</ul>
 			</div>
-		</Link>
+			<div className="p-1">
+				<Image
+					className="rounded-lg"
+					src={project.imagePreview}
+					width="300"
+					height="300"
+					alt="project-image"
+					layout="responsive"
+				/>
+			</div>
+			<div className="py-6 text-center">
+				<Link href={project.link}>
+					<a className="btn btn-tertiary mr-5">Preview</a>
+				</Link>
+				<Link href={project.link}>
+					<a className="btn btn-tertiary">Code</a>
+				</Link>
+			</div>
+		</div>
 	)
 }
 

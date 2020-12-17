@@ -14,7 +14,7 @@ export default function Home(): React.ReactNode {
 				<About />
 				<Skills />
 			</section>
-			<section className="bg-gradient-to-r from-primary via-tertiary to-primary">
+			<section className="bg-secondary">
 				<CTA />
 			</section>
 			<section id="projects">

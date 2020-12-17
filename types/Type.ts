@@ -15,4 +15,11 @@ export type Project = {
 	imagePreview: string
 	stack: string[]
 	link: string
+	code: string
+}
+
+export type SocialLinks = {
+	id: number
+	name: string
+	link: string
 }

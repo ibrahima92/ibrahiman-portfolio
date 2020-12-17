@@ -7,7 +7,7 @@ html {
 }
 
 body {
-	@apply bg-gray-light font-roboto text-base;
+	@apply bg-grey-lighter font-roboto text-base;
 }
 
 h1 {
@@ -23,15 +23,27 @@ nav {
 }
 
 p {
-	@apply text-center text-gray-dark my-1;
+	@apply text-center text-grey-darker my-1;
 }
 
 section {
-	@apply px-16 py-32;
+	@apply px-6 py-10 sm:px-16 py-36;
 }
 
-.button-primary {
-	@apply w-48 m-auto my-5 rounded-3xl px-10 py-2 bg-gradient-to-r from-primary to-secondary text-white shadow-lg text-xl ring-2 ring-tertiary focus:outline-none;
+.btn {
+	@apply w-48 m-auto text-center my-5 rounded-3xl px-10 py-2 shadow-md text-base focus:outline-none;
+}
+
+.btn-primary {
+	@apply bg-gradient-to-r from-primary to-secondary text-white;
+}
+
+.btn-secondary {
+	@apply bg-tertiary border-primary border-2 text-primary hover:bg-primary hover:text-white;
+}
+
+.btn-tertiary {
+	@apply bg-white text-primary mr-5 hover:bg-primary hover:text-white;
 }
 
 .headline {
@@ -39,7 +51,7 @@ section {
 }
 
 .description {
-	@apply mt-5 mb-16 max-w-4xl m-auto;
+	@apply mt-5 mb-10 max-w-4xl m-auto;
 }
 
 .small-width {

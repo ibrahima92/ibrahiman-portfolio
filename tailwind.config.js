@@ -8,16 +8,16 @@ module.exports = {
 	purge: [],
 	theme: {
 		colors: {
-			gray: {
-				light: '#F5f6f7',
-				dark: '#757575',
+			grey: {
+				lighter: '#f9fafb',
+				darker: '#757575',
 			},
 			red: colors.red,
 			orange: colors.orange,
 			white: '#fff',
 			black: '#222',
 			primary: '#cf6241',
-			secondary: '#200F0A',
+			secondary: '#0e0604',
 			tertiary: '#F8F0ED',
 		},
 		fontFamily: {
