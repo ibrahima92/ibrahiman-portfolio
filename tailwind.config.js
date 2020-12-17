@@ -1,11 +1,7 @@
 const colors = require('tailwindcss/colors')
 
 module.exports = {
-	future: {
-		// removeDeprecatedGapUtilities: true,
-		// purgeLayersByDefault: true,
-	},
-	purge: [],
+	purge: ['./src/**/*.html', './src/**/*.css', './src/**/*.tsx'],
 	theme: {
 		colors: {
 			grey: {
