@@ -34,7 +34,7 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
 				<Link href={project.link}>
 					<a className="btn btn-tertiary mr-5">Preview</a>
 				</Link>
-				<Link href={project.link}>
+				<Link href={project.code}>
 					<a className="btn btn-tertiary">Code</a>
 				</Link>
 			</div>

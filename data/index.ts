@@ -14,7 +14,7 @@ export const ProjectsList: Project[] = [
 		title: 'Portfolio',
 		imagePreview: '/static/portfolio.PNG',
 		stack: ['Next.js', 'TypeScript', 'Tailwind CSS'],
-		link: 'https://www.ibrahima-ndaw.com/',
+		link: '#',
 		code: 'https://github.com/ibrahima92/ibrahiman-portfolio',
 	},
 	{
