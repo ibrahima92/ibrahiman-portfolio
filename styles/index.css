@@ -7,7 +7,8 @@ html {
 }
 
 body {
-	@apply bg-grey-lighter font-roboto text-base;
+	@apply bg-grey-lighter font-roboto text-base text-black;
+	/* color: #1a1a1a */
 }
 
 h1 {
@@ -27,7 +28,7 @@ p {
 }
 
 section {
-	@apply px-6 py-10 sm:px-16 py-36;
+	@apply px-6 py-10 sm:px-16 sm:py-36;
 }
 
 .btn {
@@ -35,7 +36,7 @@ section {
 }
 
 .btn-primary {
-	@apply bg-gradient-to-r from-primary to-secondary text-white;
+	@apply gradient-primary;
 }
 
 .btn-secondary {
@@ -59,4 +60,8 @@ section {
 }
 .large-width {
 	@apply max-w-6xl m-auto;
+}
+
+.gradient-primary {
+	@apply bg-gradient-to-r from-primary to-orange text-white;
 }

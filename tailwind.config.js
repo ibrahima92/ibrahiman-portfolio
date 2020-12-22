@@ -5,13 +5,13 @@ module.exports = {
 	theme: {
 		colors: {
 			grey: {
-				lighter: '#f9fafb',
-				darker: '#757575',
+				lighter: '#f5f6f7',
+				darker: '#929292',
 			},
 			red: colors.red,
-			orange: colors.orange,
+			orange: '#cf4141',
 			white: '#fff',
-			black: '#222',
+			black: '#1a1a1a',
 			primary: '#cf6241',
 			secondary: '#0e0604',
 			tertiary: '#F8F0ED',
