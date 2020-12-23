@@ -7,7 +7,7 @@ html {
 }
 
 body {
-	@apply bg-grey-lighter font-roboto text-base;
+	@apply bg-black-darker font-roboto text-base text-white;
 }
 
 h1 {
@@ -23,11 +23,11 @@ nav {
 }
 
 p {
-	@apply text-center text-grey-darker my-1;
+	@apply text-center text-black-lighter my-1;
 }
 
 section {
-	@apply px-6 py-10 sm:px-16 py-36;
+	@apply px-6 py-10 sm:px-16 sm:py-36;
 }
 
 .btn {
@@ -35,19 +35,15 @@ section {
 }
 
 .btn-primary {
-	@apply bg-gradient-to-r from-primary to-secondary text-white;
+	@apply bg-gradient-to-r from-primary to-orange text-white mx-2;
 }
 
 .btn-secondary {
 	@apply bg-tertiary border-primary border-2 text-primary hover:bg-primary hover:text-white;
 }
 
-.btn-tertiary {
-	@apply bg-white text-primary mr-5 hover:bg-primary hover:text-white;
-}
-
 .headline {
-	@apply text-5xl my-2 text-center font-bold;
+	@apply text-5xl my-2 text-center font-bold text-white;
 }
 
 .description {

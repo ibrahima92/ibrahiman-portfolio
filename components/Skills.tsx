@@ -15,15 +15,16 @@ export default function Skills(): JSX.Element {
 	)
 }
 
-function SkillCard({ skill: { title, skills } }: SkillCardProps): JSX.Element {
+function SkillCard({ skill }: SkillCardProps): JSX.Element {
+	const { title, skills } = skill
 	return (
-		<div className="w-full m-3 rounded-lg shadow-xl ring-2 ring-tertiary overflow-hidden sm:w-60">
-			<div className="bg-tertiary p-2">
-				<h1 className="text-2xl text-center">{title}</h1>
+		<div className="w-full m-3 rounded-lg shadow-xl ring-2 ring-black-darker overflow-hidden sm:w-60">
+			<div className="bg-orange p-2">
+				<h1 className="text-2xl text-white text-center">{title}</h1>
 			</div>
 			<ul className="p-4">
 				{skills.map((skill) => (
-					<li className="text-grey-darker" key={skill}>
+					<li className="text-black-lighter" key={skill}>
 						&rarr; {skill}
 					</li>
 				))}

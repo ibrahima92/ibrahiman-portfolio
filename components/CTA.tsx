@@ -7,7 +7,7 @@ export default function CTA(): JSX.Element {
 				Ready to start a Project?
 			</h1>
 			<Link href="#contact">
-				<a className="btn btn-secondary">Contact Me</a>
+				<a className="btn btn-primary">Contact Me</a>
 			</Link>
 		</div>
 	)

@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 
-import { ProjectsList } from '../data'
+import { ProjectsList, CODESANDBOX_URL } from '../data'
 import { Project } from '../types'
 
 type ProjectCardProps = {
@@ -14,7 +14,7 @@ export default function Projects(): JSX.Element {
 			<h1 className="headline">My works</h1>
 			<p className="description">
 				I love building new things. You can visit my{' '}
-				<Link href="https://codesandbox.io/u/ibrahima92">
+				<Link href={CODESANDBOX_URL}>
 					<a className="underline">CodeSandbox</a>
 				</Link>{' '}
 				for more.
@@ -29,13 +29,14 @@ export default function Projects(): JSX.Element {
 }
 
 function ProjectCard({ project }: ProjectCardProps): JSX.Element {
+	const { stack, title } = project
 	return (
-		<div className="w-full m-3 rounded-lg shadow-xl bg-white ring-2 ring-tertiary overflow-hidden md:w-80">
+		<div className="w-full m-3 rounded-lg shadow-xl bg-black ring-2 ring-black-darker overflow-hidden md:w-80">
 			<div className="p-2">
-				<h1 className="font-bold mb-1">{project.title}</h1>
+				<h1 className="font-bold mb-1 text-primary">{title}</h1>
 				<ul className="flex items-center">
-					{project.stack.map((stack) => (
-						<li className="text-xs text-grey-darker mr-3 sm:text-base" key={stack}>
+					{stack.map((stack) => (
+						<li className="text-xs text-black-lighter mr-3 sm:text-base" key={stack}>
 							{stack}
 						</li>
 					))}
@@ -51,12 +52,12 @@ function ProjectCard({ project }: ProjectCardProps): JSX.Element {
 					layout="responsive"
 				/>
 			</div>
-			<div className="py-6 text-center">
+			<div className="py-6 flex justify-center">
 				<Link href={project.link}>
-					<a className="btn btn-tertiary mr-5">Preview</a>
+					<a className="btn btn-primary">Preview</a>
 				</Link>
 				<Link href={project.code}>
-					<a className="btn btn-tertiary">Code</a>
+					<a className="btn btn-primary">Code</a>
 				</Link>
 			</div>
 		</div>

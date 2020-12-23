@@ -11,16 +11,16 @@ type NavBarProps = { sticky: boolean }
 export default function Navbar({ sticky }: NavBarProps): JSX.Element {
 	const [navbarOpen, setNavbarOpen] = useState(false)
 	return (
-		<nav className={sticky || navbarOpen ? 'bg-white fixed shadow-md' : ''}>
+		<nav className={sticky || navbarOpen ? 'bg-secondary fixed shadow-md' : ''}>
 			<div className="container mx-auto flex flex-wrap items-center justify-between md:large-width">
 				<div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
 					<Link href="/">
-						<a className="font-bold text-2xl leading-relaxed inline-block mr-4 whitespace-no-wrap uppercase text-primary">
+						<a className="font-bold text-2xl leading-relaxed inline-block mr-4 whitespace-no-wrap uppercase">
 							IN
 						</a>
 					</Link>
 					<button
-						className="text-black cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+						className="text-white cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
 						type="button"
 						onClick={() => setNavbarOpen(!navbarOpen)}
 					>
@@ -46,7 +46,7 @@ export default function Navbar({ sticky }: NavBarProps): JSX.Element {
 
 function NavLink({ linkPage = '/', linkName }: NavLinkProps): JSX.Element {
 	return (
-		<li className="mr-4 py-2 flex items-center text-sm uppercase font-bold leading-snug text-black  hover:text-primary">
+		<li className="mr-4 py-2 flex items-center text-sm uppercase font-bold leading-snug text-white  hover:text-primary">
 			<Link href={linkPage}>
 				<a>{linkName}</a>
 			</Link>

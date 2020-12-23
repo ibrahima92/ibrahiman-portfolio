@@ -4,16 +4,15 @@ module.exports = {
 	purge: ['./pages/**/*.tsx', './components/**/*.tsx'],
 	theme: {
 		colors: {
-			grey: {
-				lighter: '#f9fafb',
-				darker: '#757575',
+			black: {
+				lighter: '#888888',
+				darker: '#1f1f1f',
 			},
 			red: colors.red,
-			orange: colors.orange,
-			white: '#fff',
-			black: '#222',
+			orange: '#cf4141',
+			white: '#f0eeee',
 			primary: '#cf6241',
-			secondary: '#0e0604',
+			secondary: '#242424',
 			tertiary: '#F8F0ED',
 		},
 		fontFamily: {

@@ -23,3 +23,10 @@ export type SocialLinks = {
 	name: string
 	link: string
 }
+
+export type BlogPost = {
+	id: number
+	title: string
+	description: string
+	link: string
+}
