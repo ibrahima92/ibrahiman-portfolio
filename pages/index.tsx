@@ -1,10 +1,10 @@
-import Layout from '../components/Layout/Layout'
-import About from '../components/Content/About'
-import CTA from '../components/Content/CTA'
-import Projects from '../components/Content/Projects'
-import Skills from '../components/Content/Skills'
-import Header from '../components/Layout/Header'
-import Contact from '../components/Content/Contact'
+import Layout from '../layout'
+import About from '../components/About'
+import CTA from '../components/CTA'
+import Projects from '../components/Projects'
+import Skills from '../components/Skills'
+import Header from '../components/Header'
+import Contact from '../components/Contact'
 
 export default function Home(): React.ReactNode {
 	return (
@@ -14,13 +14,13 @@ export default function Home(): React.ReactNode {
 				<About />
 				<Skills />
 			</section>
-			<section className="bg-secondary">
+			<section className="bg-black">
 				<CTA />
 			</section>
-			<section id="projects">
+			<section id="projects" className="bg-white">
 				<Projects />
 			</section>
-			<section id="contact" className="bg-white">
+			<section id="contact">
 				<Contact />
 			</section>
 		</Layout>

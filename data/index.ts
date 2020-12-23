@@ -1,4 +1,4 @@
-import { Project, Skill, SocialLinks } from './../types/Type'
+import { Project, Skill, SocialLinks } from '../types'
 
 export const ProjectsList: Project[] = [
 	{

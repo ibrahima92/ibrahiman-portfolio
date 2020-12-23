@@ -1,9 +1,9 @@
-import * as React from 'react'
+import { useState } from 'react'
 // import { Contact as ContactType } from '../../types/Type'
 
-const Contact: React.FC = () => {
+export default function Contact(): JSX.Element {
 	// const [formData, setformData] = React.useState<ContactType>()
-	const [sendForm, setSendForm] = React.useState<boolean>(false)
+	const [sendForm, setSendForm] = useState<boolean>(false)
 	const saveForm = (e) => {
 		e.preventDefault()
 		setSendForm(true)
@@ -70,5 +70,3 @@ const Contact: React.FC = () => {
 		</div>
 	)
 }
-
-export default Contact
