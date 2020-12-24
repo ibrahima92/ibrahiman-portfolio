@@ -11,14 +11,14 @@ export default function Home(): React.ReactNode {
 	return (
 		<Layout>
 			<Header />
-			<section id="about" className="bg-secondary">
+			<section id="about" className="">
 				<About />
 				<Skills />
 			</section>
-			<section>
+			<section className="bg-secondary">
 				<CTA />
 			</section>
-			<section id="projects" className="bg-secondary">
+			<section id="projects">
 				<Projects />
 			</section>
 			<section>

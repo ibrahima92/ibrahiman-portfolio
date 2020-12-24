@@ -51,7 +51,7 @@ export default function Contact(): JSX.Element {
 						/>
 					</div>
 				</div>
-				<div className="md:w-full px-3">
+				<div className="md:w-full">
 					<label
 						className="block uppercase tracking-wide text-black-lighter text-xs font-bold mb-2"
 						htmlFor="grid-password"

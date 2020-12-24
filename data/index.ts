@@ -11,7 +11,7 @@ export const ProjectsList: Project[] = [
 	{
 		id: 0,
 		title: 'Blog',
-		imagePreview: '/static/in-light-theme.PNG',
+		imagePreview: '/static/in-dark-theme.PNG',
 		stack: ['Gatsby', 'GraphQL', 'Markdown'],
 		link: BLOG_URL,
 		code: `${GITHUB_URL}/ibrahiman`,

@@ -17,7 +17,7 @@ export default function Posts(): JSX.Element {
 				<Link href={BLOG_URL}>
 					<a className="underline">my blog</a>
 				</Link>{' '}
-				for more.
+				for more articles.
 			</p>
 			<div className="flex flex-wrap justify-center">
 				{PostList.map((post) => (

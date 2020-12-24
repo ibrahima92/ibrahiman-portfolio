@@ -4,7 +4,8 @@ export default function About(): JSX.Element {
 			<h1 className="headline">Who am I?</h1>
 			<p className="description">
 				I&apos;m a JavaScript Enthusiast, Full-stack developer, and Blogger. I&apos;ve been writing
-				code for over 7 years (professionally for three of those).
+				code for over 7 years (professionally for three of those). I love building quality software
+				that follows best practices.
 			</p>
 		</div>
 	)

@@ -13,11 +13,12 @@ export default function Projects(): JSX.Element {
 		<div className="large-width">
 			<h1 className="headline">My works</h1>
 			<p className="description">
-				I love building new things. You can visit my{' '}
+				I love building new things. I&apos;ll help you build user-friendly apps that run either on
+				the client or the server. You can visit my{' '}
 				<Link href={CODESANDBOX_URL}>
 					<a className="underline">CodeSandbox</a>
 				</Link>{' '}
-				for more.
+				for more projects.
 			</p>
 			<div className="flex flex-wrap justify-center items-center">
 				{ProjectsList.map((project) => (
@@ -31,7 +32,7 @@ export default function Projects(): JSX.Element {
 function ProjectCard({ project }: ProjectCardProps): JSX.Element {
 	const { stack, title } = project
 	return (
-		<div className="w-full m-3 rounded-lg shadow-xl bg-black ring-2 ring-black-darker overflow-hidden md:w-80">
+		<div className="w-full rounded-lg shadow-xl bg-secondary ring-2 ring-black-darker overflow-hidden mb-10 sm:mx-5 md:w-80">
 			<div className="p-2">
 				<h1 className="font-bold mb-1 text-primary">{title}</h1>
 				<ul className="flex items-center">
