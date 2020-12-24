@@ -18,7 +18,7 @@ export default function Skills(): JSX.Element {
 function SkillCard({ skill }: SkillCardProps): JSX.Element {
 	const { title, skills } = skill
 	return (
-		<div className="w-full m-3 rounded-lg shadow-xl ring-2 ring-black-darker overflow-hidden sm:w-60">
+		<div className="w-full m-3 rounded-lg bg-secondary shadow-xl ring-2 ring-black-darker overflow-hidden sm:w-60">
 			<div className="bg-orange p-2">
 				<h1 className="text-1xl sm:text-2xl text-white text-center">{title}</h1>
 			</div>

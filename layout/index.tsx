@@ -20,7 +20,12 @@ export default function Layout({ children }: Props): JSX.Element {
 				<div className="mb-3 flex items-center justify-center">
 					{socialLinks.map(({ id, name, link }) => (
 						<Link href={link} key={id}>
-							<a target="_blank" className="mx-3 text-white" rel="noopener noreferrer">
+							<a
+								target="_blank"
+								style={{ margin: '0 0.5rem' }}
+								className="text-white"
+								rel="noopener noreferrer"
+							>
 								{name}
 							</a>
 						</Link>
