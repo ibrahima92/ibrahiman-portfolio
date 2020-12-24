@@ -22,7 +22,7 @@ export default function Layout({ children }: Props): JSX.Element {
 						<Link href={link} key={id}>
 							<a
 								target="_blank"
-								style={{ margin: '0.5rem' }}
+								style={{ margin: '1rem 0.5rem' }}
 								className="text-white"
 								rel="noopener noreferrer"
 							>
