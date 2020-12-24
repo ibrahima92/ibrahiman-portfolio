@@ -16,11 +16,11 @@ export default function Layout({ children }: Props): JSX.Element {
 			<Waypoint onEnter={() => setSticky(false)} onLeave={() => setSticky(true)} />
 			<Navbar sticky={sticky} />
 			<main>{children}</main>
-			<footer className="bg-orange w-full flex flex-col items-center justify-center py-5">
-				<div className="mb-3">
+			<footer className="bg-secondary w-full flex flex-col items-center justify-center py-5">
+				<div className="mb-3 flex items-center justify-center">
 					{socialLinks.map(({ id, name, link }) => (
 						<Link href={link} key={id}>
-							<a target="_blank" className="text-white mx-3" rel="noopener noreferrer">
+							<a target="_blank" className="mx-3 text-white" rel="noopener noreferrer">
 								{name}
 							</a>
 						</Link>
