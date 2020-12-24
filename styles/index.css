@@ -7,7 +7,12 @@ html {
 }
 
 body {
+<<<<<<< HEAD
 	@apply bg-black-darker font-roboto text-base text-white;
+=======
+	@apply bg-grey-lighter font-roboto text-base text-black;
+	/* color: #1a1a1a */
+>>>>>>> 9ebb2f323063184f433eb0727fe8ec1f47b7bf8d
 }
 
 h1 {
@@ -35,7 +40,11 @@ section {
 }
 
 .btn-primary {
+<<<<<<< HEAD
 	@apply bg-gradient-to-r from-primary to-orange text-white mx-2;
+=======
+	@apply gradient-primary;
+>>>>>>> 9ebb2f323063184f433eb0727fe8ec1f47b7bf8d
 }
 
 .btn-secondary {
@@ -55,4 +64,8 @@ section {
 }
 .large-width {
 	@apply max-w-6xl m-auto;
+}
+
+.gradient-primary {
+	@apply bg-gradient-to-r from-primary to-orange text-white;
 }
