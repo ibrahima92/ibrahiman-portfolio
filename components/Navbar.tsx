@@ -15,8 +15,8 @@ export default function Navbar({ sticky }: NavBarProps): JSX.Element {
 			<div className="container mx-auto flex flex-wrap items-center justify-between md:large-width">
 				<div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
 					<Link href="/">
-						<a className="font-bold text-2xl leading-relaxed inline-block mr-4 whitespace-no-wrap uppercase">
-							IN
+						<a className="font-bold text-1xl leading-relaxed inline-block mr-4 whitespace-no-wrap uppercase">
+							{sticky || navbarOpen ? 'IN' : 'Ibrahima Ndaw'}
 						</a>
 					</Link>
 					<button
