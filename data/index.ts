@@ -1,7 +1,7 @@
 import { Project, Skill, SocialLinks, BlogPost } from '../types'
 
 const GITHUB_URL = 'https://github.com/ibrahima92'
-export const BLOG_URL = 'https://www.ibrahima-ndaw.com/blog'
+export const BLOG_URL = 'https://www.ibrahima-ndaw.com'
 export const CODESANDBOX_URL = 'https://codesandbox.io/u/ibrahima92'
 const TWITTER_URL = 'https://twitter.com/ibrahima92_'
 const LINKEDIN_URL = 'https://www.linkedin.com/in/ibrahima-ndaw/'
@@ -82,20 +82,41 @@ export const Posts: BlogPost[] = [
 		title: 'Data fetching in Next.js — How To Use SWR',
 		description:
 			'Next.js offers several ways for fetching data since it supports both client and server-side…',
-		link: `${BLOG_URL}/data-fetching-in-nextjs-using-useswr/`,
+		link: `${BLOG_URL}/blog/data-fetching-in-nextjs-using-useswr/`,
 	},
 	{
 		id: 1,
 		title: "Routing in Next.js — A Complete Beginner's Guide",
 		description:
 			'Next.js is a React framework that ships with all the features you need for production. Next.js…',
-		link: `${BLOG_URL}/routing-in-nextjs/`,
+		link: `${BLOG_URL}/blog/routing-in-nextjs/`,
 	},
 	{
 		id: 2,
 		title: 'Introduction Guide to Next.js',
 		description:
 			'Next.js is a React framework that ships with all the features you need for production. It gives you…',
-		link: `${BLOG_URL}/introduction-to-nextjs/`,
+		link: `${BLOG_URL}/blog/introduction-to-nextjs/`,
+	},
+	{
+		id: 3,
+		title: 'How To Use Redux in your React TypeScript App',
+		description:
+			"Redux is a predictable state container for JavaScript apps. It's a popular library for managing…",
+		link: `${BLOG_URL}/blog/using-redux-with-react-typescript/`,
+	},
+	{
+		id: 4,
+		title: 'The React TypeScript Cheatsheet – How To Set Up Types on Hooks',
+		description:
+			'Next.js is a React framework that ships with all the features you need for production. Next.js…',
+		link: `${BLOG_URL}/blog/set-typescript-types-to-react-hooks/`,
+	},
+	{
+		id: 5,
+		title: 'How To Build a Todo App with React, TypeScript, NodeJS, and MongoDB',
+		description:
+			'In this tutorial, we will be using TypeScript on both sides (server and client) to build a Todo App…',
+		link: `${BLOG_URL}/blog/how-to-buil-a-todo-app-with-react-and-node-js/`,
 	},
 ]
